@@ -2,6 +2,22 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
+main {
+  display: block;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #2b2b2b;
+}
+::-webkit-scrollbar-thumb {
+  background: #191919;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #131212; 
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
