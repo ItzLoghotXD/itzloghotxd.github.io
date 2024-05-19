@@ -1,86 +1,110 @@
+/* Common Styles */
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
+
 main {
   display: block;
 }
+
 ::-webkit-scrollbar {
   width: 12px;
 }
+
 ::-webkit-scrollbar-track {
   background: #2b2b2b;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #191919;
   border-radius: 6px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #131212; 
 }
+
+/* Common Styles (continued) */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color); 
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header, footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--header-footer-bg); 
+  color: var(--header-footer-color); 
 }
 
 section {
-    padding: 20px;
+  padding: 20px;
 }
 
 .product, .product-detail {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .product img, .product-detail img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 /* Button Styles */
 .btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-right: 10px;
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 footer nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 footer nav ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 footer nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 footer p {
-    margin: 10px 0 0;
+  margin: 10px 0 0;
+}
+
+/* Dark Theme */
+:root {
+  --bg-color: #222;
+  --text-color: #fff;
+  --header-footer-bg: #333; 
+  --header-footer-color: #fff;
+}
+
+body.light {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --header-footer-bg: #ccc; 
+  --header-footer-color: #fff; 
 }
